@@ -21,7 +21,7 @@
 <details>
 <summary>Note App</summary>
 <br>
-![Alt text](projectimages/noteapp.jpg?raw=true "Note App")
+![Note App](/projectimages/noteapp.jpg?raw=true "Note App")
 </details>
 
 <details>
