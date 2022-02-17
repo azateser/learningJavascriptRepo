@@ -23,11 +23,6 @@
     <img src="/projectimage/noteapp.jpg">
   </details>
   
-    <details>
-    <summary>Joke App (-)</summary>
-    <img src="/projectimage/jokeapp.jpg">
-  </details>
-
 
 
 ## 🔗 Links
