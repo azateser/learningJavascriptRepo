@@ -18,9 +18,19 @@
 
 ## Projects
 
-- Note App (+)
+<details>
+<summary>Note App</summary>
+<br>
+![Alt text](projectimages/noteapp.jpg?raw=true "Note App")
+</details>
 
-- Joke App (-)
+<details>
+<summary>Joke App</summary>
+<br>
+Adding
+</details>
+
+
 
 
 ## 🔗 Links
