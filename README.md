@@ -18,18 +18,15 @@
 
 ## Projects
 
-<details>
-<summary>Note App</summary>
-<br>
-![Note App](/projectimages/noteapp.jpg?raw=true "Note App")
-</details>
-
-<details>
-<summary>Joke App</summary>
-<br>
-Adding
-</details>
-
+  <details>
+    <summary>Note App (+)</summary>
+    <img src="/projectimage/noteapp.jpg">
+  </details>
+  
+    <details>
+    <summary>Joke App (-)</summary>
+    <img src="/projectimage/jokeapp.jpg">
+  </details>
 
 
 
