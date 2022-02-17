@@ -1,3 +1,6 @@
+// Created by Azat ESER
+// Github: https://github.com/azateser
+
 const newNote = document.querySelector('.input-addNote');
 const addNewNoteBtn = document.querySelector('.btn-note-add');
 const noteLists = document.querySelector('.note-list');
@@ -35,7 +38,7 @@ function addNoteFunction(e) {
 
   if (newNote.value.length > 0) {
     createANote(newNote.value);
-    //localstoragea kaydet
+    // save to localstorage
     localStorageKaydet(newNote.value);
     newNote.value = '';
   } else {
@@ -70,38 +73,38 @@ function localStorageRead() {
 }
 
 function createANote(myNote) {
-  //div olusturma
+  // Create Note Div
   const noteDiv = document.createElement('div');
   noteDiv.classList.add('note-item');
 
-  //li olusturma
+  // Create Note Li
   const noteLi = document.createElement('li');
   noteLi.classList.add('note');
   noteLi.innerText = myNote;
   noteDiv.appendChild(noteLi);
 
-  //tamamlandı butonu ekle
+  // Add Completed Button
   const noteEndBtn = document.createElement('button');
   noteEndBtn.classList.add('note-btn');
   noteEndBtn.classList.add('note-end');
   noteEndBtn.innerHTML = '<i class="far fa-check-square"></i>';
   noteDiv.appendChild(noteEndBtn);
 
-  //tamamlandı butonu ekle
+  // Add Remove Button
   const noteRemoveBtn = document.createElement('button');
   noteRemoveBtn.classList.add('note-btn');
   noteRemoveBtn.classList.add('note-remove');
   noteRemoveBtn.innerHTML = '<i class="far fa-trash-alt"></i>';
   noteDiv.appendChild(noteRemoveBtn);
 
-  //ul'ye olusturdugumuz divi ekleyelim
+  // Let's add the div we created to the ul
   noteLists.appendChild(noteDiv);
 }
 
 function localStorageSil(myNote) {
   let myNotes = localStorageConvertToArray();
 
-  //splice ile item sil
+  // delete item with splice
   const silinecekElemanIndex = myNotes.indexOf(myNote);
   console.log(silinecekElemanIndex);
   myNotes.splice(silinecekElemanIndex, 1);
