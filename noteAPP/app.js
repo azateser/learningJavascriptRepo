@@ -105,9 +105,9 @@ function localStorageSil(myNote) {
   let myNotes = localStorageConvertToArray();
 
   // delete item with splice
-  const silinecekElemanIndex = myNotes.indexOf(myNote);
-  console.log(silinecekElemanIndex);
-  myNotes.splice(silinecekElemanIndex, 1);
+  const elementIndexToBeDeleted = myNotes.indexOf(myNote);
+  console.log(elementIndexToBeDeleted);
+  myNotes.splice(elementIndexToBeDeleted, 1);
 
   localStorage.setItem('myNotes', JSON.stringify(myNotes));
 }
