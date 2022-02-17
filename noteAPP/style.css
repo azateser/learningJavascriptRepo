@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+  --main-color: #9b59b6;
+  --main-color-light: #d178f5;
+  --accent-color: #ecf0f1;
+  --accent-color-light: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition:0.2s;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #8ec5fc;
+  background: url('https://products.ls.graphics/mesh-gradients/images/01.-Royal-Heath.jpg');
+  background-size: cover;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  color: white;
+}
+
+
+.header,
+.note-form {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  min-height: 20vh;
+  align-items: center;
+}
+
+.form-item {
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: none;
+  background-color: white;
+  outline: none;
+}
+
+.btn-note-add {
+  color: rgb(11, 150, 11);
+  cursor: pointer;
+  background: white;
+}
+
+.btn-note-add:hover {
+  background-color: rgb(11, 150, 11);
+  color: white;
+}
+
+.note-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.note-list {
+  list-style: none;
+  min-width: 40%;
+}
+
+.note-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  font-size: 1.2rem;
+  background-color: white;
+}
+
+.note {
+  flex: 1;
+  padding: 0.7rem;
+}
+
+.note-btn {
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+  cursor: pointer;
+}
+
+.note-btn.note-end {
+color: white;
+background: green;
+}
+
+.note-remove {
+  background-color: rgba(159, 0, 0, 0.8);
+  color: white;
+}
+
+.completed-note{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.note-item:hover {
+box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.6);
+}
+
+.footer {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  min-height: 2vh;
+  align-items: center;
+}
+
+.footer-title {
+color: white;
+font-size: 1rem;
+margin-top: 5rem;
+}
